@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz do Milhão - Disciplinas Escolares</title>
+    <title>Quiz do Milhão - 5 Matérias</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="jogo">
         <header>
             <h1>QUIZ DO MILHÃO</h1>
-            <p id="categoria">Categoria: Disciplinas Escolares</p>
+            
+            <!-- Seletor com as 5 matérias escolares -->
+            <div class="controle-materia">
+                <label for="seletor-materia">Escolha a Matéria:</label>
+                <select id="seletor-materia">
+                    <option value="historia">História</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="portugues">Português</option>
+                </select>
+                <span id="rodada-info" class="badge-rodada">Rodada 1 de 3</span>
+            </div>
         </header>
 
         <section class="painel">
